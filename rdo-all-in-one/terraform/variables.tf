@@ -7,7 +7,8 @@ variable "password" {
 
 variable "baseimage_image_url" {
   type = string
-  default = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img"
+  #default="https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-latest.x86_64.qcow2"
+  default = "http://localhost/CentOS-Stream-GenericCloud-9-latest.x86_64.qcow2"
   #default = "http://localhost/debian-11-generic-amd64-daily.img"
   #default = "http://localhost/debian-12-generic-amd64-daily.img"
 
@@ -18,7 +19,7 @@ variable "baseimage_image_url" {
 #
 variable "deployment_disksize" {
   type    = number
-  default = 40
+  default = 60
 }
 
 variable "deployment_cinderlvm_disksize" {
@@ -28,12 +29,12 @@ variable "deployment_cinderlvm_disksize" {
 
 variable "deployment_vcpu" {
   type    = number
-  default = 2
+  default = 4
 }
 
 variable "deployment_memory" {
   type    = number
-  default = 6
+  default = 24
 }
 
 #

@@ -920,4 +920,3 @@ enable_cinder_backend_lvm: "yes"
 #docker_configure_for_zun: "no"
 #containerd_configure_for_zun: "no"
 #containerd_grpc_gid: 42463
-horizon_keystone_multidomain: "yes"
